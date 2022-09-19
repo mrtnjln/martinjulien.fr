@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julien MARTIN - Développeur web full stack 🚀 - BS Consulting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="is-loading">
+    <video
+      poster="assets/videos/Aloha-Mundo/Snapshots/Aloha-Mundo.jpg"
+      id="bgvideo"
+      playsinline
+      autoplay
+      muted
+      loop
+    >
+      <source
+        src="assets/videos/Aloha-Mundo/MP4/Aloha-Mundo.mp4"
+        type="video/mp4"
+      />
+    </video>
+
+    <div id="wrapper">
+      <section id="main">
+        <header>
+          <span class="avatar"><img src="images/avatar.jpg"/></span>
+          <h1>Julien MARTIN</h1>
+          <h3>Freelance ♦ Développeur web full stack 🚀</h3>
+          <p>Toulouse</p>
+        </header>
+        <footer>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://twitter.com/mrtnjln"
+                title="Twitter"
+                class="fa-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/mrtnjln"
+                title="Github"
+                class="fa-github"
+                >Mail</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/julien-martin-bs-consulting/"
+                title="LinkedIn"
+                class="fa-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="assets/CV-Julien-MARTIN.pdf"
+                title="Mon CV"
+                class="fa-file-pdf-o"
+                >CV</a
+              >
+            </li>
+          </ul>
+          <p>hello@martinjulien.fr</p>
+          <blockquote>
+            Internet enthusiast. #TypeScript #Angular #NodeJS #NestJS #AppSec
+          </blockquote>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      /* Oldschool JS! */
+
+      // Kick off animation ! :D
+      if ("addEventListener" in window) {
+        window.addEventListener("load", function() {
+          document.body.className = document.body.className.replace(
+            /\bis-loading\b/,
+            ""
+          );
+        });
+        document.body.className += navigator.userAgent.match(/(MSIE|rv:11\.0)/)
+          ? " is-ie"
+          : "";
+      }
+    </script>
+  </body>
+</html>
